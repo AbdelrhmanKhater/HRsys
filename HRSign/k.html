@@ -1,0 +1,18 @@
+<html>
+    <body>
+    <script language="JScript">
+    
+    function create()
+    {
+         var myObject, newfolder;
+        myObject = new ActiveXObject("Scripting.FileSystemObject");
+        newfolder = myObject.CreateFolder ("c:\\newtmp\\");
+    }
+
+    </script>
+    Create Folder: "c:\newtmp"
+    <form name="myForm">
+    <input type="Button" value="Click to Create New Folder" onClick='create()'>
+    </form>
+    </body>
+    </html>
